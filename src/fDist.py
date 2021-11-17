@@ -15,7 +15,7 @@ def lte_inv(prob, n1, n2):
     print(f"P(X <= x) = {prob} then x = {result}")
     return result
     
-def gt_inv(prob, dof):
+def gt_inv(prob, n1, n2):
     result = stats.f.ppf(1 - prob, n1, n2)
     print(f"P(X > x) = {prob} then x = {result}")
     return result

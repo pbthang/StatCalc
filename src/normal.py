@@ -19,3 +19,8 @@ def lte_inv(prob, exp, sd):
     result = stats.norm.ppf(prob, exp, sd)
     print(f"P(X <= x) = {prob} then x = {result}")
     return result
+
+def gt_inv(prob, exp, sd):
+    result = stats.norm.ppf(1 - prob, exp, sd)
+    print(f"P(X > x) = {prob} then x = {result}")
+    return result

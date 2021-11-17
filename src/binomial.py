@@ -17,7 +17,7 @@ def lte(x, n, p):
     return result
 
 def gte(x, n, p):
-    result = 1 - lt(x, n, p)
+    result = 1 - stats.binom.cdf(x - 1, n, p)
     print(f"P(X >= {x}) = {result}")
     return result
 

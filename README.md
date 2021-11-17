@@ -17,3 +17,4 @@
 - [x] t-Distribution
 - [x] Chi-square Distribution
 - [x] f-Distribution
+- [x] Population/Sample Summary Statistics

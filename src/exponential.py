@@ -6,7 +6,7 @@ def lte(x, exp):
     return result
 
 def gt(x, exp):
-    result = 1 - lte(x, exp)
+    result = 1 - stats.expon.cdf(x, 0, exp)
     print(f"P(X > {x}) = {result}")
     return result
 

@@ -1,16 +1,16 @@
-from numpy.core.fromnumeric import trace
 import binomial as b
 import negBinomial as nb
 import poisson as po
-import normal
+import normal as norm
 import exponential as exp
-import tDist as r
+import tDist as t
 import fDist as f
 import chiSq
+import summaryStat as stat
 
 def main():
-    # X ~ B(10, 0.4) -> P(X <= 5)
-    b.lte(5, 10, 0.4)
+    t.gt_inv(0.05, 28)
+    pass
 
 if __name__ == "__main__":
     main()
