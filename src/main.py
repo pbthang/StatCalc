@@ -9,7 +9,7 @@ import chiSq
 import summaryStat as stat
 
 def main():
-    t.gt_inv(0.05, 28)
+    t.gt_inv(0.025, 14)
     pass
 
 if __name__ == "__main__":
